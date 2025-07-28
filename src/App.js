@@ -14,6 +14,7 @@ function Header(props) {
     );
 }
 
+
 function Nav(props) {
     console.log('props', props, props.topics);
     const list = []
