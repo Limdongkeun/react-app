@@ -37,11 +37,8 @@ const HandleEffect = () => {
             <p/>
             <input type="text" value={name} onChange={handleInputChande}/> <p/>
             <span>name : {name}</span>
-            <p/>
-            <p/>
-            <p/>
-            <p/>
-            <p/>
+            <br/>
+            <br/>
             {showTimer && <Timer/>}
             <button onClick={() => setShowTimer(!showTimer)}>Toggle Timer</button>
         </div>
