@@ -7,6 +7,8 @@ import Counter from "./pags/Counter";
 import Input from "./pags/Input";
 import Input2 from "./pags/Input2";
 import UserList from "./pags/List";
+import HandleState from "./pags/State";
+import HandleEffect from "./pags/Effect";
 
 function App2() {
 
@@ -19,6 +21,8 @@ function App2() {
                 <Link to={"/input"}>INPUT</Link> | {" "}
                 <Link to={"/input2"}>INPUT2</Link> | {" "}
                 <Link to={"/userList"}>USERLIST</Link> | {" "}
+                <Link to={"/state"}>USE_STATE</Link> | {" "}
+                <Link to={"/effect"}>USE_EFFECT</Link> | {" "}
             </nav>
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
@@ -27,6 +31,8 @@ function App2() {
                 <Route path={"/input"} element={<Input/>}/>
                 <Route path={"/input2"} element={<Input2/>}/>
                 <Route path={"/userList"} element={<UserList/>}/>
+                <Route path={"/state"} element={<HandleState/>}/>
+                <Route path={"/effect"} element={<HandleEffect/>}/>
             </Routes>
         </div>
     );
