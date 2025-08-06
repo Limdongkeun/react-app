@@ -14,6 +14,8 @@ import HandleRef2 from "./pags/Ref2";
 import HandleRef3 from "./pags/Ref3";
 import HandleRef4 from "./pags/Ref4";
 import HandleContext from "./pags/Context";
+import HandleMemo from "./pags/Memo";
+import HandleMemo2 from "./pags/Memo2";
 
 function App2() {
 
@@ -35,6 +37,8 @@ function App2() {
                 <Link to={"/ref3"}>USE_REF3</Link> | {" "}
                 <Link to={"/ref4"}>USE_REF4</Link> | {" "} <br/><br/>
                 <Link to={"/context"}>USE_CONTEXT</Link> | {" "}
+                <Link to={"/memo"}>USE_MEMO</Link> | {" "}
+                <Link to={"/memo2"}>USE_MEMO2</Link> | {" "}
             </nav>
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
@@ -50,6 +54,8 @@ function App2() {
                 <Route path={"/ref3"} element={<HandleRef3/>}/>
                 <Route path={"/ref4"} element={<HandleRef4/>}/>
                 <Route path={"/context"} element={<HandleContext/>}/>
+                <Route path={"/memo"} element={<HandleMemo/>}/>
+                <Route path={"/memo2"} element={<HandleMemo2/>}/>
             </Routes>
         </div>
     );
